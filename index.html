@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Code-Quiz</title>
+</head>
+<body>
+    <header class="nav row-cols-12" id="nav">
+        <div class="scores col-10 text-left m-3 p-4" id="scores">View High Scores</div>
+        <div class="timer col-1 text-right m-3 p-4">Time: <span id="timer">75</span></div>
+    </header>
+
+    <div class="wrapper">
+            <h1 class="title row-cols-12 text-center m-4">Javascript Coding Quiz</h1>
+            <p class="quiz-info text-center h4">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+            <div class="text-center"><a href="#question-one"><button class="btn-success" id="start-Btn" type="button">Start Quiz</button></a></div>
+        
+        <main class="content" id="content">
+            <div class="question-one" id="question-one">
+                <h2 id="quiz-question">Commonly used data types DO NOT include:</h2>
+                <ul id="answer-one">
+                    <a href="#question-two">
+                        <li id="a">strings</li>
+                    </a>
+                    <a href="#question-two">
+                        <li id="b">booleans</li>
+                    </a>
+                    <a href="#question-two">
+                        <li id="c">alerts</li>
+                    </a>
+                    <a href="#question-two">
+                        <li id="d">numbers</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="question-two" id="question-two">
+                <h2 id="quiz-question">The condition in an if / else statement is enclosed with _______.</h2>
+                <ul id="answer-two">
+                    <a href="#question-three">
+                        <li id="a">quotes</li>
+                    </a>
+                    <a href="#question-three">
+                        <li id="b">curly brackets</li>
+                    </a>
+                    <a href="#question-three">
+                        <li id="c">paranthesis</li>
+                    </a>
+                    <a href="#question-three">
+                        <li id="d">square brackets</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="question-three" id="question-three">
+                <h2 id="quiz-question">Arrays in JavaScript can be used to store _______.</h2>
+                <ul id="answer-three">
+                    <a href="#question-four">
+                        <li id="a">numbers and strings</li>
+                    </a>
+                    <a href="#question-four">
+                        <li id="b">other arrays</li>
+                    </a>
+                    <a href="#question-four">
+                        <li id="c">all of the above</li>
+                    </a>
+                    <a href="#question-four">
+                        <li id="d">booleans</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="question-four" id="question-four">
+                <h2 id="quiz-question">String values must be enclosed within _______ when being assigned to variables.</h2>
+                <ul id="answer-four">
+                    <a href="#question-five">
+                        <li id="a">commas</li>
+                    </a>
+                    <a href="#question-five">
+                        <li id="b">curly brackets</li>
+                    </a>
+                    <a href="#question-five">
+                        <li id="c">quotes</li>
+                    </a>
+                    <a href="#question-five">
+                        <li id="d">parenthesis</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="question-five" id="question-five">
+                <h2 id="quiz-question">A very useful tool during development and debugging for printing content to the debugger is:</h2>
+                <ul id="answer-five">
+                    <a href="#final-score">
+                        <li id="a">JavaScript</li>
+                    </a>
+                    <a href="#final-score">
+                        <li id="b">terminal/zsh</li>
+                    </a>
+                    <a href="#final-score">
+                        <li id="c">console.log</li>
+                    </a>
+                    <a href="#final-score">
+                        <li id="d">for loops</li>
+                    </a>
+                </ul>
+            </div>
+
+            <section class="final-score" id="final-score">
+                <h1 id="title-alert">All done!</h1>
+                <p id="scores">Your final score is </p>
+                <div class="initials">
+                    <form action="post" method="get" id="user-initials">
+                        <p id="text">Enter initials: </p>
+                        <input type="text" id="input" data="">
+                    </form>
+                    <a href="#high-scores"><button class="btn-dark" id="submit">Submit</button></a>
+                </div>
+            </section>
+
+            <div class="high-scores" id="high-scores">
+                <h2 id="scores-title">High scores</h2>
+                <p id="score-initial">1. </p>
+                <div id="btns">
+                    <a href="#scores"><button id="go-back">Go back</button></a>
+                    <a href="#scores"><button id="remove-scores">Clear scores</button></a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./assets/js/script.js" defer></script>
+</body>
+</html>
