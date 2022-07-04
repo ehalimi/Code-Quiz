@@ -3,30 +3,6 @@ body,html{
     height: 100%;
 }
 
-.content{
-    display: none;
-}
-
-/* #question-one {
-    display: block;
-} */
-
-/* #question-two {
-    display: none;
-}
-
-#question-three {
-    display: none;
-}
-
-#question-four {
-    display: none;
-}
-
-#question-five {
-    display: none;
-} */ */
-
 .scores{
     text-align: left;
     margin-top: 20px;
@@ -37,6 +13,63 @@ body,html{
     margin-top: 20px;
 }
 
-/* .wrapper{
+#answer-1 li,
+#answer-2 li,
+#answer-3 li,
+#answer-4 li,
+#answer-5 li {
+    width: 275px;
+    padding: 15px 30px;
+    margin-bottom: 25px;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    text-align: left;
+    background-color:lavender;
+}
+
+#quiz-question {
+    position: relative;
+    font-size: 36px;
+    letter-spacing: 0.1px;
+    text-align: left;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+#question-1,
+#question-2,
+#question-3,
+#question-4,
+#question-5,
+#final-score,
+#high-scores {
+    margin: 400px 25px;
+}
+
+#question-1,
+#question-2,
+#question-3,
+#question-4,
+#question-5 {
+    position: relative;
+    padding-top: 300px;
+}
+
+main {
+    max-width: 1200px;
+    justify-content: center;
+    margin: auto;
     display: block;
-} */
+    text-align: center;
+    margin-bottom: 125px;
+}
+
+#submit {
+    position: relative;
+    top: 3px;
+    margin-left: 7px;
+}
+
+
